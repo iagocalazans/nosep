@@ -2,22 +2,24 @@
   "name": "nosep",
   "version": "1.0.0",
   "description": "This perfome a fast and easy to go object sanitize removing and replacing all properties that use separators to javaScriptStandard properties way.",
-  "main": "src/module.ts",
+  "main": "dist/module.js",
+  "typings": "dist/module.d.ts",
   "author": "Iago Calazans <iago.calazans@gmail.com)",
   "license": "MIT",
   "scripts": {
+    "eslint": "eslint --ext .ts ./example.ts ./src/**/* --fix",
     "build": "tsc",
-    "start": "node dist/example.js",
     "start:dev": "ts-node example.ts"
   },
   "private": false,
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.2",
-    "eslint": "^7.12.1",
+    "@typescript-eslint/parser": "^4.28.2",
+    "eslint": "^7.30.0",
     "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-promise": "^5.1.0",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.5"
   }

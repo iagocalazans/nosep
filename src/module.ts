@@ -1,3 +1,3 @@
-import { sanitizeProperties, capitalize } from "./sanitize"
+import { sanitizeProperties, capitalize } from "./lib/sanitize"
 
 export const noSep = { sanitizeProperties, capitalize }
