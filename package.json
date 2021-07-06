@@ -1,6 +1,6 @@
 {
   "name": "nosep",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This perfome a fast and easy to go object sanitize removing and replacing all properties that use separators to javaScriptStandard properties way.",
   "keywords": [
     "object",
