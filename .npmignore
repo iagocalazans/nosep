@@ -1,3 +1,7 @@
 .eslintrc.json
 tsconfig.json
 src/*
+.devcontainer/
+.vscode/
+yarn.lock
+example.ts

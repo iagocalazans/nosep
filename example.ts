@@ -1,36 +1,42 @@
-import { noSep } from './src/module'
+import { noSep } from 'nosep'
 
 /**
  * { 'deploy#in-azure_dev-ops': false, 'deploy#in-dev_mode': true }
  */
 const object = { 'deploy#in-azure_dev-ops': false, 'deploy#in-dev_mode': true }
+console.log(object)
 
 /**
  * camelCasing properties with default _ (underscore) { 'deploy#in-azureDev-ops': false, 'deploy#in-devMode': true }
  */
-noSep.sanitizeProperties(object)
-
+const underscore = noSep.sanitizeProperties(object)
+console.log(underscore)
 /**
  * camelCasing properties with # { 'deployIn-azureDev-ops': false, 'deployIn-devMode': true }
  */
-noSep.sanitizeProperties(object, '#')
+const hashtag = noSep.sanitizeProperties(object, '#')
+console.log(hashtag)
 
 /**
  * camelCasing properties with - { deployInAzureDevOps: false, deployInDevMode: true }
  */
-noSep.sanitizeProperties(object, '-')
+const line = noSep.sanitizeProperties(object, '-')
+console.log(line)
 
 /**
  * camelCasing properties with y (letter) { deploInAzureDevOps: false, deploInDevMode: true }
  */
-noSep.sanitizeProperties(object, 'y')
+const y = noSep.sanitizeProperties(object, 'y')
+console.log(y)
 
 /**
  * camelCasing an Array of strings createdClassFunction
  */
-noSep.capitalize(['created', 'class', 'function'])
+const camelCase = noSep.capitalize(['created', 'class', 'function'])
+console.log(camelCase)
 
 /**
  * Capitalizing the string "created" Created
  */
-noSep.capitalize('created')
+const Capitalize = noSep.capitalize('created')
+console.log(Capitalize)
