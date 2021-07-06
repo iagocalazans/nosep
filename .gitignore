@@ -1,0 +1,9 @@
+# vscode
+.devcontainer/
+
+# node
+yarn.lock
+node_modules/
+
+# build
+dist/
